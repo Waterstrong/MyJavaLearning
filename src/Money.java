@@ -6,7 +6,7 @@ import java.util.Dictionary;
 
 
 
-public abstract class Money
+public abstract class Money <T extends Money>
 {
     public Money(float value) {
         this.value = value;
@@ -22,10 +22,10 @@ public abstract class Money
     public void setRate(float rate) {
         this.rate = rate;
     }
-    public Money add(Money money)
+    public T add(Money money)
     {
         float result = this.value  + money.getValue() / money.getRate() * this.rate;
-        this.value = result;
-        return this;
+        T newMoney = null;//new T(result);
+        return newMoney;
     }
 }
