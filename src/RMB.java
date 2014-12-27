@@ -1,7 +1,7 @@
 /**
  * Created by water on 14-11-16.
  */
-public class RMB extends Money {
+public class RMB extends Currency {
     public RMB(float value)
     {
         super(value);

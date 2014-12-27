@@ -1,14 +1,12 @@
-import java.util.Dictionary;
-
 /**
  * Created by water on 14-11-16.
  */
 
 
 
-public abstract class Money <T extends Money>
+public abstract class Currency // <T extends Money>
 {
-    public Money(float value) {
+    public Currency(float value) {
         this.value = value;
     }
     private float value;
@@ -22,10 +20,10 @@ public abstract class Money <T extends Money>
     public void setRate(float rate) {
         this.rate = rate;
     }
-    public T add(Money money)
+    public float add(Currency currency)
     {
-        float result = this.value  + money.getValue() / money.getRate() * this.rate;
-        T newMoney = null;//new T(result);
-        return newMoney;
+        float result = this.value  + currency.getValue() / currency.getRate() * this.rate;
+        //T newMoney = null;//new T(result);
+        return result;//newMoney;
     }
 }
