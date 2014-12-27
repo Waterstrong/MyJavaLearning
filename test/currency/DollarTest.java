@@ -1,3 +1,7 @@
+package currency;
+
+import currency.Dollar;
+import currency.RMB;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

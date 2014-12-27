@@ -1,3 +1,5 @@
+package currency;
+
 /**
  * Created by water on 14-11-26.
  */
